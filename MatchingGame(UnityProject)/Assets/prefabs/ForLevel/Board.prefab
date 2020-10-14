@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2093793507866973728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2093793507866973730}
+  - component: {fileID: 2093793507866973729}
+  - component: {fileID: 2093793507866973731}
+  m_Layer: 0
+  m_Name: Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2093793507866973730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093793507866973728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2093793508748842191}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2093793507866973729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093793507866973728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad0ce02fa8d2b3c479f30ff82a7b4a86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 1
+  width: 8
+  height: 7
+  offSetForSlide: 20
+  tilePrefab: {fileID: 6630162701957079185, guid: 784327e22bc265740b52abb46e2d0137,
+    type: 3}
+  dots:
+  - {fileID: 436561226210517218, guid: acf6104917a0ebf47b74cedbbbd9c691, type: 3}
+  - {fileID: 6499565621543516326, guid: 3cf628b3f15b2544da90b7a69fc44618, type: 3}
+  - {fileID: 1510135944420307245, guid: 297d22ca16d2703438705e5140549ae1, type: 3}
+  - {fileID: 295814484085324070, guid: 9427f3fe6c60bca4dbb0234a6756c7b6, type: 3}
+  - {fileID: 5125931125554339502, guid: 637d13ac9ee51fb43b9c328c2ba9b03e, type: 3}
+  - {fileID: 5158697889387410293, guid: 07771de6d9a0b6846ad20516136f8535, type: 3}
+  breakableTile: {fileID: 1629811676408679423, guid: ec89743232195aa449df32733dcab266,
+    type: 3}
+  destroyParticle: {fileID: 4885355648863507066, guid: 0143b706ba181af4b843335c9a57102f,
+    type: 3}
+  currentDot: {fileID: 0}
+  tiles: []
+  scoreForPiece: 10
+--- !u!114 &2093793507866973731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093793507866973728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af3b652650a7db4ea58d9bc3042f1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 3
+  hintParticle: {fileID: 1330029628636091003, guid: d0aae960405a63e449b600091f7e30aa,
+    type: 3}
+  hint: {fileID: 0}
+--- !u!1 &2093793508748842190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2093793508748842191}
+  - component: {fileID: 2093793508748842184}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2093793508748842191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093793508748842190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 287.80188, y: 590.49316, z: -402.81497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2093793507866973730}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2093793508748842184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093793508748842190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc8e97c906c197149b30128fc48fb037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  score: 0
